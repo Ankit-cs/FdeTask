@@ -4,19 +4,21 @@ The Lenny Growth Assistant is a full-stack, AI-powered conversational applicatio
 
 ---
 
-## 1. Project Status
+### 1. Project Status
 > [!IMPORTANT]
-> **Phase 2 (Backend Foundation) Complete**. The backend skeleton, database setup, environment loader, global error routing, and health testing suites have been initialized. All other modules (RAG, transcript ingestion, vector DB, LLM wrappers, agent loop, UI) remain unimplemented and are planned for subsequent phases.
+> **All Phases Complete**. The backend, frontend, RAG ingestion pipeline, engine router, database, and all advanced polish features (1-bit simulation, auto-summarization, data flywheel, and 100% extractive fallback) are fully implemented and production-ready.
 
 ---
 
-## 2. Planned Tech Stack
-* **Frontend**: React (SPA), TypeScript, Vanilla CSS
-* **Backend**: Python, FastAPI
-* **Database**: Neon PostgreSQL with `pgvector` extension
-* **Cloud LLM**: Groq (API-based, e.g., Llama-3-70b)
-* **Local LLM**: Ollama (Local execution, e.g., Llama-3-8b for local demo)
-* **Agent Framework**: Pi Coding Agent (planned choice, to be verified during early integration phases)
+## 2. Tech Stack
+* **Frontend**: React (Vite), TypeScript, TailwindCSS
+* **Backend**: Python, FastAPI, SQLAlchemy (asyncpg), Alembic
+* **Database**: PostgreSQL (Neon) with `pgvector` extension
+* **Cloud LLMs**: Gemini (Google) and Groq
+* **Local LLM**: Ollama (Local execution, e.g., Llama-3-8b, Llama-3.2-3b)
+* **Experimental Engine**: 1-bit CPU Inference Simulation (BitNet b1.58 simulation)
+* **Embeddings**: FastEmbed (ONNX, CPU-native)
+* **Agent Architecture**: Custom multi-engine routing with deterministic intent classification.
 
 ---
 
